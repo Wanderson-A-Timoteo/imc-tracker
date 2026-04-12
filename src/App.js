@@ -83,8 +83,40 @@ function App() {
   }
 
   return (
-    <div className="container">
-      <h1>IMC Tracker</h1>
+    <div className="App">
+
+      {/** Título da aplicação */}
+      <div>
+        <h1>Tracker IMC</h1>
+      </div>
+
+      <div>
+        {/** Formulário */}
+        {/** Gráfico */}
+      </div>
+
+      <div>
+        {/** Formulário */}
+        <div>
+          <h4>Últimos 7 registros</h4>
+        </div>
+
+        <div>
+          {/** Formulário */}
+        </div>
+      </div>
+
+      {/** Botão de desfazer */}
+      <div>
+        {getData("lastState" !== null && (
+          <div>
+            <button className='' onClick={handleUndo}>
+              Voltar
+            </button>
+          </div>
+        ))}
+      </div>
+
     </div>
   );
 }
