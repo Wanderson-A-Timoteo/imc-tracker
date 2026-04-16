@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import './App.css';
 import { getData, storeData } from './helper/LocalStorage';
 import { v4 as uuidv4 } from "uuid";
+import ImcForm from './form/ImcForm';
 
 /**
  * Recupera os dados iniciais do local storage
@@ -92,6 +93,7 @@ function App() {
 
       <div>
         {/** Formulário */}
+        <ImcForm change={handleChange} />
         {/** Gráfico */}
       </div>
 
