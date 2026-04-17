@@ -1,5 +1,5 @@
 import { useState } from "react";
-import PropTypes, {func} from "prop-types";
+import PropTypes from "prop-types";
 
 // Valores iniciais do formula´rio
 const INITIAL_VALUES = {
@@ -42,7 +42,7 @@ function ImcForm({change}) {
   return(
     <>
       {/** Container com os campos do formulário */}
-      <div>
+      <div className="for-row">
         {/** Peso */}
         <div>
           <label>Peso (kg)</label>
@@ -74,10 +74,10 @@ function ImcForm({change}) {
       </div>
       
       {/** Botão de calculo do IMC */}
-      <div>
+      <div className="center">
         <button
           id="imc-btn"
-          className=""
+          className="calculate-btn"
           type="button"
           onClick={handleSubmit}
           disabled = {!formData.weight || !formData.height}
