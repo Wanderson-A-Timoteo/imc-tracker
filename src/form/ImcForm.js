@@ -42,7 +42,7 @@ function ImcForm({change}) {
   return(
     <>
       {/** Container com os campos do formulário */}
-      <div className="for-row">
+      <div className="form-row">
         {/** Peso */}
         <div>
           <label>Peso (kg)</label>

@@ -1,7 +1,7 @@
 :root {
   --bg-primary: #172b4d;
   --bg-card: #274881;
-  --bg-container: #1f3a67
+  --bg-container: #1f3a67;
 
   --color-primary: #3f51b5;
   --color-primary-hover: #5364c3;
@@ -11,7 +11,7 @@
   --text-light: #ffffff;
 
   --radius-lg: 44px;
-  --radius-mf: 12px
+  --radius-mf: 12px;
 }
 
 /* Body */
@@ -23,7 +23,7 @@ body {
 }
 
 /* Titles */
-h1, h2, h3, h4 {
+h1, h2, h3 {
   text-align: center;
 }
 
@@ -79,7 +79,7 @@ label {
   margin-left: 1%;
 
   transition: transform 0.2s ease,
-              box-shadow 0.2 ease,
+              box-shadow 0.2s ease,
               background 0.2s ease;
 }
 

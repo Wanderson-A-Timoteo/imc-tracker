@@ -4,6 +4,7 @@ import { getData, storeData } from './helper/LocalStorage';
 import { v4 as uuidv4 } from "uuid";
 import ImcForm from './form/ImcForm';
 import Bar from './components/Bar';
+import Info from './components/Info'
 
 /**
  * Recupera os dados iniciais do local storage
@@ -108,25 +109,44 @@ function App() {
 
       <div>
         {/** Formulário */}
-        <div>
+        <div className='center'>
           <h4>Últimos 7 registros</h4>
         </div>
 
-        <div>
-          {/** Formulário */}
+        <div className='data-container'>
+          {/** Lista de registros */}
+          {records.length > 0 ? 
+            (
+              records.map((info) => (
+                <Info 
+                  key={info.id}
+                  id={info.id}
+                  weight={info.weight}
+                  height={info.height}
+                  date={info.date}
+                  imc={info.imc}
+                  deleteCard={handleDelete}
+                />
+              ))
+            ) 
+            : 
+            (
+              <div className='center'>
+                Sem log encontrado
+              </div>
+            )
+          }
         </div>
       </div>
 
       {/** Botão de desfazer */}
-      <div>
-        {getData("lastState" !== null && (
-          <div>
-            <button className='' onClick={handleUndo}>
-              Voltar
-            </button>
-          </div>
-        ))}
-      </div>
+      {getData("lastState") !== null && (
+        <div className='center'>
+          <button className='calculate-btn' onClick={handleUndo}>
+            Voltar
+          </button>
+        </div>
+      )}
 
     </div>
   );
