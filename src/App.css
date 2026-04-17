@@ -11,7 +11,7 @@
   --text-light: #ffffff;
 
   --radius-lg: 44px;
-  --radius-mf: 12px;
+  --radius-md: 12px;
 }
 
 /* Body */
@@ -99,4 +99,57 @@ label {
   color: #666666;
   cursor: not-allowed;
   box-shadow: none;
+}
+
+
+/* Data Container */
+.data-container {
+  background: var(--bg-container);
+  border-radius: var(--radius-md);
+  margin-top: 40px;
+  padding: 40px 20px;
+}
+
+/* .Cards */
+.card {
+  background: var(--bg-card);
+  color: white;
+  border-radius: var(--radius-md);
+  padding: 20px;
+  position: relative;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  margin-bottom: 10px;
+}
+
+.card-title {
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.card-data {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+/* Delete Button */
+.delete-btn {
+  background: var(--color-danger);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-weight: bold;
+  padding: 6px 10px;
+  cursor: pointer;
+
+  position: absolute;
+  top: -6px;
+  right: -8px;
+
+  transition: transform 0.15s ease;
+}
+
+.delete-btn:hover {
+  transform: scale(1.2);
 }

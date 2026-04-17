@@ -12,8 +12,8 @@ function Info({ weight, height, id, date, imc, deleteCard }) {
     <div className="card">
 
       {/* Card info */}
-      <div>
-        <span className="">
+      <div className="card-content">
+        <span className="card-title">
           IMC: {imc}
         </span>
         <div className="card-data">

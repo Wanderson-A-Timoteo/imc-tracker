@@ -102,7 +102,7 @@ function App() {
 
         {/** Gráfico */}
         <Bar 
-          labelData={chartData.date}
+          labelData={chartData.data}
           imcData={chartData.imc}
         />
       </div>
