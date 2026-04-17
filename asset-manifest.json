@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/imc-tracker/static/css/main.8b58b5eb.css",
+    "main.js": "/imc-tracker/static/js/main.816acb6b.js",
+    "index.html": "/imc-tracker/index.html",
+    "main.8b58b5eb.css.map": "/imc-tracker/static/css/main.8b58b5eb.css.map",
+    "main.816acb6b.js.map": "/imc-tracker/static/js/main.816acb6b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8b58b5eb.css",
+    "static/js/main.816acb6b.js"
+  ]
+}
