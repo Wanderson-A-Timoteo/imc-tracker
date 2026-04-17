@@ -3,6 +3,7 @@ import './App.css';
 import { getData, storeData } from './helper/LocalStorage';
 import { v4 as uuidv4 } from "uuid";
 import ImcForm from './form/ImcForm';
+import Bar from './components/Bar';
 
 /**
  * Recupera os dados iniciais do local storage
@@ -37,14 +38,17 @@ function App() {
 
     // Extrair datas e valores do imc para o gráfico
     const data = records.map((item) => item.date);
-    const peso = records.map((item) => item.peso);
+    const imc = records.map((item) => item.imc);
+
+    setChartData({data, imc});
+
   }, [records]);
 
   // Calcula IMC e adiciona um novo registro
   function handleChange(values) {
-    const heihtInMeters = values.height / 100;
+    const heightInMeters = values.height / 100;
 
-    const imc = (values.weiht / (heihtInMeters * heihtInMeters)).toFixed(2);
+    const imc = (values.weight / (heightInMeters * heightInMeters)).toFixed(2);
 
     // Copia as propriedades de values e adiciona imc e id
     const newRecord = {
@@ -94,7 +98,12 @@ function App() {
       <div>
         {/** Formulário */}
         <ImcForm change={handleChange} />
+
         {/** Gráfico */}
+        <Bar 
+          labelData={chartData.date}
+          imcData={chartData.imc}
+        />
       </div>
 
       <div>
