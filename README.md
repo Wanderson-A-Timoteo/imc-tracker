@@ -1,72 +1,160 @@
-# Getting Started with Create React App
+<h1 align="center">
+  <img src="public/logo.png" alt="Logo IMC Tracker" width="80" />
+  <br>
+  IMC Tracker App
+</h1>
 
-#2FF402
+<p align="center">
+  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-executar-aplicação">Executar Aplicação</a>
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<br>
 
-## Available Scripts
+## 💻 Projeto
 
-In the project directory, you can run:
+Bem-vindo ao repositório do **IMC Tracker**, uma aplicação web front-end desenvolvida em **React.js**. Este projeto foi construído para auxiliar usuários no cálculo e monitoramento do Índice de Massa Corporal (IMC), fornecendo classificações precisas baseadas nos padrões de saúde da OMS. ⚖️
 
-### `npm start`
+> Projeto focado na construção de Single Page Applications (SPA), manipulação dinâmica de formulários e gerenciamento de estado para exibição de resultados em tempo real.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+🔗 **Demo Online:** [imc-tracker.github.io](https://wanderson-a-timoteo.github.io/imc-tracker/)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<br>
 
-### `npm test`
+## 🚀 Funcionalidades
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Cálculo de IMC em Tempo Real:** Processamento instantâneo do índice a partir da entrada de peso e altura.
+- **Classificação Dinâmica:** Identificação automática da categoria de peso (Abaixo do peso, Peso normal, Sobrepeso, Obesidade, etc.) com feedback visual por cores.
+- **Histórico de Registros:** Armazenamento local das medições anteriores, permitindo que o usuário acompanhe a evolução de sua composição corporal ao longo do tempo.
+- **Interface Intuitiva:** Formulários controlados e validados para evitar entradas incorretas de dados.
+- **Otimização com Hooks:** Uso estratégico de `useState` para controle de entradas e `useEffect` para persistência de dados no `localStorage`.
+- **Design Responsivo:** Layout fluido desenvolvido com React Bootstrap, garantindo uma excelente experiência de uso em smartphones, tablets e desktops.
 
-### `npm run build`
+<br>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🛠️ Tecnologias Utilizadas
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **React.js** (Hooks: `useState`, `useEffect`)
+- **React Router DOM** (Navegação entre seções, se aplicável)
+- **React Bootstrap & Bootstrap** (Componentes de UI e Grid System)
+- **Bootstrap Icons** (Elementos visuais e indicadores)
+- **CSS3** (Customização de temas e animações de transição)
+- **Git & GitHub** (Versionamento e hospedagem de código)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<br>
 
-### `npm run eject`
+## 🔥 Executando Localmente a Aplicação
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Caso você deseje executar o projeto na sua máquina local para visualização ou modificação, basta seguir os passos abaixo:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 🌀 Começando...
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Para começar, você deve clonar o repositório do projeto na sua máquina e instalar as dependências.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+#### ❗️ Instalando as Dependências:
 
-## Learn More
+Abra o seu terminal (WSL/Ubuntu, CMD ou PowerShell) e navegue até o diretório onde deseja armazenar o projeto:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+git clone git@github.com:Wanderson-A-Timoteo/imc-tracker.git
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Depois, acesse a pasta clonada e digite a seguinte instrução para baixar todas as dependências (node_modules) necessárias:
 
-### Code Splitting
+Acesse a pasta clonada
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+cd imc-tracker
+```
+Baixar todas as dependências
 
-### Analyzing the Bundle Size
+```bash
+npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### 💨 Executando a Aplicação
 
-### Making a Progressive Web App
+Com as dependências devidamente instaladas, inicie o servidor de desenvolvimento local digitando:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```bash
+npm start
+```
 
-### Advanced Configuration
+Pronto! Dessa forma o projeto estará rodando localmente em sua máquina. Acesse no navegador:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```
+http://localhost:3000
+```
 
-### Deployment
+<br>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### 🚩 Tenho Dúvidas... O que fazer?
 
-### `npm run build` fails to minify
+Caso tenham dúvidas sobre o código do projeto, sintam-se a vontade em abrir uma **[ISSUE AQUI](https://github.com/Wanderson-A-Timoteo/imc-tracker/issues)**. Assim que possível, estarei respondendo a todas as dúvidas que tiverem!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<br>
+
+## 🚀 Deploy no GitHub Pages
+
+Para disponibilizar o **IMC Tracker** online, utilizamos o **GitHub Pages**. Abaixo, o passo a passo para configurar e realizar o deploy da aplicação de forma automatizada.
+
+### 1. Instalação do Pacote
+O primeiro passo é instalar o pacote `gh-pages` como uma dependência de desenvolvimento no projeto:
+
+```bash
+npm install gh-pages --save-dev
+```
+
+### 2. Configuração do package.json
+
+É necessário informar ao React qual será a URL base da aplicação e quais comandos devem ser executados para o deploy.
+
+- Adicionar Homepage: No arquivo package.json, adicione a seguinte propriedade (substituindo pelo link do seu repositório):
+
+```JSON
+"homepage": "https://SEU-NOME-DE-USUARIO-DO-GITHUB.github.io/NOME-DO-PROJETO",
+```
+
+- Configurar Scripts: No mesmo arquivo, dentro do bloco "scripts", adicione os comandos de predeploy e deploy:
+
+
+```JSON
+"scripts": {
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build",
+  "start": "react-scripts start", // Já existe
+  ...mantém o resto
+}
+```
+### 3. Executando o Deploy
+
+Com tudo configurado, basta rodar o comando abaixo no terminal. Ele irá gerar uma build otimizada da aplicação e criar automaticamente uma branch chamada gh-pages no GitHub com os arquivos prontos para produção:
+
+```bash
+npm run deploy
+```
+
+<br>
+
+## Autor:
+
+Feito com ♥ by
+
+<div align="center">
+  <a href="https://github.com/Wanderson-A-Timoteo">
+    <img src="https://github.com/Wanderson-A-Timoteo.png" width="120px;" alt="Foto de Perfil do Wanderson Timóteo no GitHub" style="border-radius: 50%;"/>
+  </a>
+  <br />
+  <br />
+  <h4>Wanderson Timóteo</h4>
+    
+  <a href="https://www.wandersontimoteo.com.br/" target="_blank">
+    <b>🌐 Visite meu Portfólio</b>
+  </a>
+  &nbsp;|&nbsp;
+  <a href="https://wanderson-a-timoteo.github.io/perfil-de-contato/" target="_blank">
+    <b>🔗 Entre em Contato</b>
+  </a>
+</div>
+
