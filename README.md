@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="public/logo.png" alt="Logo IMC Tracker" width="80" />
+  <img src="public/favicon.png" alt="Logo IMC Tracker" width="80" />
   <br>
   IMC Tracker App
 </h1>
